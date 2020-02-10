@@ -1,0 +1,256 @@
+
+     /* Dropdown Button */
+      .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd;}
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+      /*font-size*/
+      .a-font-size{
+        font-size: 15px;
+        box-shadow: none;
+      }
+
+      /*Dropleft css*/
+      .rightMenu {
+    position:relative;
+    float:right;
+     }
+     .right-caret {
+         
+         border-bottom: 4px solid transparent;
+         border-top: 4px solid transparent;
+         border-left: 4px solid #000000;
+         display: inline-block;
+         height: 0;
+         opacity: 1;
+         vertical-align: top;
+         width: 0;
+         
+     }
+     .right
+     {
+         float:right;
+     }
+
+     .bold:hover{
+       font-weight: bold;
+       color:gray;
+     }
+      .bolder:hover{
+       font-weight: bold;
+       color:blue;
+     }
+
+     .black{
+      color: gray;
+     }
+
+     .purple{
+      color: blue;
+     }
+
+     .a:hover{
+        /*box-shadow: 10px 10px 5px grey; */
+       box-shadow:  0px 1px 10px 5px #888888;
+       transition: 0.3s;
+     }
+
+     .btn-color{
+      background-color: #ff8830 !important;
+      border-radius: 50px;
+     }
+
+     .input-border[type=text]{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+     }
+
+     /* enable absolute positioning */
+     .inner-addon {
+       position: relative;
+     }
+
+     /* style glyph */
+     .inner-addon .glyphicon {
+       position: absolute;
+       padding: 10px;
+       pointer-events: none;
+     }
+
+     /* align glyph */
+     .left-addon .glyphicon  { left:  0px;}
+     .right-addon .glyphicon { right: 0px;}
+
+     /* add padding  */
+     .left-addon input  { padding-left:  30px; }
+     .right-addon input { padding-right: 30px; }
+
+
+
+     body {
+       margin: 10px;
+     }
+
+     .card{
+      width: 15rem;
+     }
+
+     .btn-sticky{
+      margin-left: 90%; 
+      border-radius: 50px; 
+      padding-right: 20px;
+      background-color: #ff8830 !important;
+     }
+
+.b{
+ font-size: 150%;
+}
+
+
+.sidenav-drop{
+ background-color: white;
+ width: 800px; 
+ left: 210px !important;
+ box-shadow: none;
+ border: none;
+ border-radius: 0px;
+}
+.drop-link {
+   font-size: 13px;
+   color: grey !important;
+   background-color: #fff !important;
+}
+
+.drop-link:hover{
+ text-decoration: underline;
+ color: #ff8830 !important;
+ }
+
+.ac{
+ color: orange;
+}
+
+.input-border[type=text]{
+ border-right: 1px solid gainsboro;
+ border-top: 1px solid gainsboro;
+ border-bottom: 1px solid gainsboro;
+ padding: 5px;
+ font-size: 100%;
+}
+
+.input-loc[type=text]:hover{
+ cursor:pointer;
+ color:blue;
+ text-decoration:underline;
+}
+
+.span-outline{
+ border: 1px solid gainsboro;
+}
+
+.span-border-radius{
+ border-top-left-radius: 20px;
+ border-bottom-left-radius: 20px;
+}
+
+.span-height{
+ height: 2.18em;
+}
+
+.btn-height{
+  height: 2.2em;
+  padding-left: 23px;
+  padding-right: 23px;
+  left: -74px;
+  border-top-left-radius: 46px !important; 
+  border-bottom-left-radius: 46px !important;
+}
+
+.sidebar-no-shadow{
+ box-shadow: none;
+}
+
+.icon-color{
+ color: #ff8830;
+}
+
+.a-mb{
+ margin-bottom: -16px;
+}
+
+.a-mb-mt{
+ margin-bottom: -16px; 
+ margin-top: -16px;
+}
+
+.a-mt{
+ margin-top: -16px;
+}
+
+.input-city[type=text]{
+ border-top-right-radius: 20px !important;
+ border-bottom-right-radius: 20px !important;
+}
+
+.a-sign{
+ text-decoration: none !important;
+}
+
+.a-sign:hover{
+ opacity: 0.6 !important;
+}
+
+.nav-style{
+ padding-bottom: -10px !important;
+}
+
+.dropdown-position{
+ left: -40px;
+ top: 45px;
+}
+
+.a-list-it{
+ color: white; 
+ font-weight: bold;
+}
+
+..a-list-it:hover{
+ color: white;
+}

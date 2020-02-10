@@ -1,0 +1,664 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>5miles</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/dashboard/">
+
+     <link rel="icon" href="images/5miles.jpeg" type="image/icon type">
+
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ">
+    <div class="col-3">
+      <a class="navbar-brand p-0" href="#">
+       <img src="images/5mileslogo.png" class="img-fluid" height=100 width=100>
+      </a>
+    </div>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <form class="form-inline my-2 my-lg-0">
+        <div class="input-group mt-1">
+        <div class="input-group-prepend">
+          <span class="input-group-text bg-white span-outline span-border-radius span-height">
+           <i class="fa fa-search icon icon-color"></i> 
+          </span>
+        </div>
+         <input type="text" aria-label="First name" placeholder="Search..." class="form-control btn-border input-border shadow-none">
+         <div class="input-group-prepend">
+          <span class="input-group-text bg-white span-outline span-height">
+           <i class="fa fa-map-marker icon-color" aria-hidden="true"></i>
+          </span>
+        </div>
+         <input type="text" aria-label="Last name" value="Makati City" class="form-control input-border input-loc shadow-none input-city">
+         <div class="input-group-append">
+          <button class="btn btn-warning btn-color text-white font-weight-bold btn-height shadow-none" type="button" id="button-addon2" style="">Go!</button>
+         </div>
+        </div>
+       </form>
+
+       <div class="navbar-nav offset-1">
+        <a href="#" class="btn btn-color shadow-none a-list-it">
+          <i class="fa fa-fw fa-bullhorn"></i> List it
+        </a>
+         <li class="nav-item dropdown mx-3">
+               <a class="dropdown-toggle nav-link active a-font-size dropdownbtn text-dark mt-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 About 
+               </a>
+               <div class="dropdown-content shadow-none dropdown-position" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item a-mb text-center" href="#">About</a>
+                  <hr>
+                 <a class="dropdown-item a-mb-mt text-center" href="#">Help Center</a>
+                  <hr>
+                 <a class="dropdown-item a-mb-mt text-center" href="#">Blog</a>
+                  <hr>
+                 <a class="dropdown-item a-mt text-center" href="#">Contact Us</a>
+               </div>
+              </li>
+         <li class="nav-item mx-2 mt-3">
+          <a class="p-2 text-dark a-sign" href="#">Sign In</a>
+         </li>
+          <li class="nav-item mx-2 mt-3">
+          <a class="p-2 text-dark a-sign" href="#">Sign Up</a>
+         </li>
+       </div>
+     </div>
+   </nav>
+
+</div>
+
+
+<div class="container-fluid">
+  <div class="row mt-3">
+    <nav class="col-md-2 d-none d-md-block bg-white sidebar mt-3 ml-3 sidebar-no-shadow">
+      <div class="">
+        <ul class="nav flex-column">
+          <li class="nav-item dropdown mb-1">
+           <div class="btn-group dropright">
+              <a class="nav-link dropdown-toggle bolder purple dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: blue;">
+                <i class="fa fa-fw fa-shopping-cart mr-2"></i>5miles Dash
+              </a>
+              <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                <div class="row ml-3">
+                 <div class="col"> 
+                   <a class="drop-link" href="#">All</a>
+                   <a class="drop-link" href="#">Jewelry & Watches</a>
+                   <a class="drop-link" href="#">Sports & Outdoors</a>
+                   <a class="drop-link" href="#">Fashion & Accessories</a>
+                 </div>
+                 <div class="col">
+                   <a class="drop-link" href="#">Free Shipping</a>
+                   <a class="drop-link" href="#">Collectibles</a>
+                   <a class="drop-link" href="#">Toys, Baby & Kids</a>
+                 </div>
+                   <div class="col">
+                   <a class="drop-link" href="#">Electronics</a>
+                   <a class="drop-link" href="#">Home & Garden</a>
+                   <a class="drop-link" href="#">Beauty & Health</a>
+                 </div>
+                </div>   
+              </div>         
+            </div>
+          </li>
+          <li class="nav-item mb-2">
+           <a class="nav-link bold" style="color: gray;" href="#">
+            <i class="fa fa-fw fa-car mr-2"></i> Car Pro
+           </a>
+          </li>
+          <li class="nav-item dropdown mb-1">
+            <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold dropdownbtn" href="#" data-toggle="dropdown" data-hover aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                     <i class="fa fa-fw fa-car mr-2"></i> Automotive
+                   </a>
+                    <div class="dropdown-menu dropdown-content sidenav-drop">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#">Cars & Trucks</a>
+                        <a class="drop-link" href="#">RVS, Campers & Trailers</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#">Buy Here Pay Here</a>
+                        <a class="drop-link" href="#">Auto Parts</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#">Motorcycle Parts</a>
+                        <a class="drop-link" href="#">Wheels & Tires</a>
+                      </div>
+                     </div>   
+                    </div>     
+             </div>
+          </li>
+          <li class="nav-item dropdown mb-1">
+               <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                     <i class="fa fa-fw fa-paint-brush mr-2"></i>Art & Collectibles
+                   </a>
+                    <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Arts & Crafts</a>
+                        <a class="drop-link" href="#" style="color: gray;">Movies</a>
+                        <a class="drop-link" href="#" style="color: gray;">Antiques</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Books</a>
+                        <a class="drop-link" href="#" style="color: gray;">Music</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Collectibles</a>
+                        <a class="drop-link" href="#" style="color: gray;">Musical Instruments</a>
+                      </div>
+                     </div>   
+                    </div>          
+                 </div>
+          </li>
+          <li class="nav-item dropdown mb-1">
+           <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                     <i class="fa fa-fw fa-tv mr-2"></i>Electronics
+                   </a>
+                     <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Cellphones</a>
+                        <a class="drop-link" href="#" style="color: gray;">Video Games</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Computers</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">General Electronics</a>
+                      </div>
+                     </div>   
+                    </div>         
+                 </div>
+          </li>
+          <li class="nav-item dropdown mb-1">
+           <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                    <i class="fa fa-fw fa-deaf mr-2"></i>Fashion & Accessories
+                   </a>
+                     <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Baby & Kids</a>
+                        <a class="drop-link" href="#" style="color: gray;">Jewelry & Watches</a>
+                        <a class="drop-link" href="#" style="color: gray;">Wedding</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Bags & Handbags</a>
+                        <a class="drop-link" href="#" style="color: gray;">Men's Clothing & Shoes</a>
+                          <a class="drop-link" href="#" style="color: gray;">Women's Clothing & Shoes</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Health & Beauty</a>
+                        <a class="drop-link" href="#" style="color: gray;">Toys & Games</a>
+                      </div>
+                     </div>   
+                    </div>        
+                 </div>
+          </li>
+        </ul>
+
+        <ul class="nav flex-column mb-1">
+          <li class="nav-item dropdown">
+             <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                    <i class="fa fa-houzz mr-3"></i>Home & Garden
+                   </a>
+                      <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Appliances</a>
+                        <a class="drop-link" href="#" style="color: gray;">Garden & Outdoor</a>
+                        <a class="drop-link" href="#" style="color: gray;">Tools</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Bedding</a>
+                        <a class="drop-link" href="#" style="color: gray;">Household</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Furniture</a>
+                        <a class="drop-link" href="#" style="color: gray;">Pet Supplies</a>
+                      </div>
+                     </div>   
+                    </div>           
+                 </div>
+          </li>
+          <li class="nav-item dropdown mb-1">
+            <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                     <i class="fa fa-fw fa-steam mr-2"></i>Sports & Leisure
+                   </a>
+                     <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Boats</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Sports & Outdoors</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Tickets</a>
+                      </div>
+                     </div>   
+                    </div>           
+                 </div>
+          </li>
+           <li class="nav-item dropdown mb-1">
+            <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                     <i class="fa fa-fw fa-dollar mr-2"></i>Free Donation
+                   </a>
+                   <!--   <div class="dropdown-menu dropdown-content">
+                       <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                     </div>    -->      
+                 </div>
+          </li>
+          <li class="nav-item dropdown mb-1">
+             <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                   <i class="fa fa-fw fa-users mr-2"></i>Community
+                   </a>
+                     <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Pet Adoption</a>
+                        <a class="drop-link" href="#" style="color: gray;">Yard Sales</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Lost & Found</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Wanted</a>
+                      </div>
+                     </div>   
+                    </div>      
+                 </div>
+          </li>
+           <li class="nav-item dropdown mb-1">
+             <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                  <i class="fa fa-fw fa-thumbs-up mr-2"></i>Services
+                   </a>
+                     <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Auto Repair</a>
+                        <a class="drop-link" href="#" style="color: gray;">Cleaning</a>
+                        <a class="drop-link" href="#" style="color: gray;">Events & Catering</a>
+                        <a class="drop-link" href="#" style="color: gray;">Home Improvement & Repair</a>
+                        <a class="drop-link" href="#" style="color: gray;">Moving & Storage</a>
+                        <a class="drop-link" href="#" style="color: gray;">Transportation</a>
+                        <a class="bdrop-link" href="#" style="color: gray;">Other</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Auto Washing & Detailing</a>
+                        <a class="drop-link" href="#" style="color: gray;">Creative</a>
+                        <a class="drop-link" href="#" style="color: gray;">Financial</a>
+                        <a class="drop-link" href="#" style="color: gray;">Legal</a>
+                        <a class="drop-link" href="#" style="color: gray;">Online Skills</a>
+                        <a class="drop-link" href="#" style="color: gray;">Travel & Tourism</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Child Care</a>
+                        <a class="drop-link" href="#" style="color: gray;">Electronics Repair & Installation</a>
+                        <a class="drop-link" href="#" style="color: gray;">Health & Beauty</a>
+                        <a class="drop-link" href="#" style="color: gray;">Lessons & Trainings</a>
+                        <a class="drop-link" href="#" style="color: gray;">Pet Care</a>
+                        <a class="drop-link" href="#" style="color: gray;">Yard & Outdoors</a>
+                      </div>
+                     </div>   
+                    </div>           
+                 </div>
+          </li>
+          <li class="nav-item dropdown mb-1">
+             <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                  <i class="fa fa-fw fa-home mr-2"></i>Housing 
+                   </a>
+                    <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Apartment for rent</a>
+                        <a class="drop-link" href="#" style="color: gray;">House for sale</a>
+                        <a class="drop-link" href="#" style="color: gray;">Rooms Wanted</a>
+                        <a class="drop-link" href="#" style="color: gray;">Sublets & Temporary</a>
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Apartments for sale</a>
+                        <a class="drop-link" href="#" style="color: gray;">Housing Wanted</a>
+                        <a class="drop-link" href="#" style="color: gray;">Office & Commercial</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">House for rent</a>
+                        <a class="drop-link" href="#" style="color: gray;">Rooms & Shared</a>
+                        <a class="drop-link" href="#" style="color: gray;">Parking & Storage</a>
+                      </div>
+                     </div>   
+                    </div>        
+                 </div>
+          </li>
+             </li>
+          <li class="nav-item dropdown mb-1">
+             <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                    <i class="fa fa-fw fa-user-md mr-2"></i>Jobs
+                   </a>
+                    <div class="dropdown-menu dropdown-content sidenav-drop" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">I want a job</a>
+                        <a class="drop-link" href="#" style="color: gray;">Business Development</a>
+                        <a class="drop-link" href="#" style="color: gray;">Customer Service</a>
+                        <a class="drop-link" href="#" style="color: gray;">Finance & Accounting</a>
+                        <a class="drop-link" href="#" style="color: gray;">Hotel & Hospitality</a>
+                        <a class="drop-link" href="#" style="color: gray;">Labor</a>
+                        <a class="drop-link" href="#" style="color: gray;">Marketing</a>
+                        <a class="drop-link" href="#" style="color: gray;">Retail & Wholesale</a>
+                        <a class="drop-link" href="#" style="color: gray;">Security</a>
+                        <a class="drop-link" href="#" style="color: gray;">Transportation</a>
+                        <a class="drop-link" href="#" style="color: gray;">Business Development</a>
+                        <a class="drop-link" href="#" style="color: gray;">Customer Service</a>
+
+                      </div>
+                      <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Admin & Office</a>
+                        <a class="drop-link" href="#" style="color: gray;">Construction</a>
+                        <a class="drop-link" href="#" style="color: gray;">Education</a>
+                      </div>
+                        <div class="col">
+                        <a class="drop-link" href="#" style="color: gray;">Automotive</a>
+                        <a class="drop-link" href="#" style="color: gray;">Creative</a>
+                        <a class="drop-link" href="#" style="color: gray;">Engineering</a>
+                      </div>
+                     </div>   
+                    </div>          
+                 </div>
+          </li>
+             <li class="nav-item dropdown mb-1">
+              <div class="btn-group dropright">
+                   <a class="nav-link dropdown-toggle bold black dropdownbtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: gray;">
+                    <i class="fa fa-fw fa-server mr-2"></i>Other
+                   </a>
+                     <div class="dropdown-menu dropdown-content sidenav-drop"" style="left: 210px;">
+                     <div class="row ml-3">
+                      <div class="col"> 
+                        <a class="drop-link" href="#" style="color: gray;">Other</a>
+                      </div>
+                      <div class="col">
+                      </div>
+                        <div class="col">  
+                      </div>
+                     </div>   
+                    </div>               
+                 </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="images/watch.jpeg" height="250" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                 <h1><b style="font-family: Courier;">Every Second Matters</b></h1>
+                 <button type="button" class="btn btn-primary btn-lg mb-4 mt-4">BID NOW</button>
+               </div>
+           </div>
+           <div class="carousel-item">
+             <img src="images/selling.jpeg" height="250" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                 <h1><b style="font-family: Courier;">Sell Fast, Sell More</b></h1>
+                 <button type="button" class="btn btn-primary btn-lg mb-4 mt-4">JOIN 5MILES DASH NOW</button>
+               </div>
+           </div>
+           <div class="carousel-item">
+             <img src="images/car.jpeg" height="250" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                 <h1><b style="font-family: Courier;">ACCELERATE YOUR INVENTORY SALES</b></h1>
+                 <h5>5miles Accelerator Program makes it easier than ever to list and sell vehicles!</h5>
+               </div>
+           </div>
+            <div class="carousel-item">
+             <img src="images/amazon.png" height="250" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                 <!-- <h1><b>Sell Fast, Sell More</b></h1> -->
+                 <button type="button" class="btn btn-warning btn-lg mb-4 mt-4">Download 5miles App to Earn Now</button>
+               </div>
+           </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </a>
+        </div>
+
+        <div class="row">
+       <!-- 5miles text  -->
+        <div class="col mt-1 mb-2">
+         <h6 class="p font-weight-bold text-primary">5miles Dash</h6>
+        </div>
+        <!-- End of text  -->
+
+        <!-- "More" link -->
+        <div class="col mt-1" style="margin-left: 70%;">
+         <a href="#" style="text-decoration: none; color: orange;  font-size: 130%;">More ></a>
+        </div>
+        <!-- End of link -->
+        <div>
+
+       <!-- Cards -->
+       <div class="row">
+        <div class="col-3">
+         <a href="#" style="text-decoration: none;"> 
+          <div class="card">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#" style="text-decoration: none;"> 
+          <div class="card">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="col-3">
+         <a href="#" style="text-decoration: none;"> 
+          <div class="card">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="col-3">
+        <a href="#" style="text-decoration: none;"> 
+          <div class="card">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+       </div>
+
+       <div class="row mt-3">
+        <div class="col-3">
+         <a href="#" style="text-decoration: none;"> 
+          <div class="card a">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#" style="text-decoration: none;"> 
+          <div class="card a">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="col-3">
+         <a href="#" style="text-decoration: none;"> 
+          <div class="card a">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="col-3">
+        <a href="#" style="text-decoration: none;"> 
+          <div class="card a">
+            <img src="images/car.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card col-12 bg-primary">
+                <div class="card-body text-white">
+                  <center><b class="b">BID $9</b><br>+ Free Shipping</center>
+                </div>
+              </div>
+              <p class="card-text mt-2"><center><b class="text-success">ACCEPTING BID</b></center></p>
+              <p><center class="text-secondary">Aljun is winning</center></p>
+            </div>
+           </div>
+          </a>
+        </div>
+       </div>
+
+    </main>
+  </div>
+</div>
+
+   <div class=" float-right ">
+    <button type="button" class="btn btn-warning btn-md fixed-bottom mb-2 btn-sticky"> <i class="fa fa-fw fa-question-circle mr-2"></i>Support</button>
+   </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="dashboard.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+ $("#navbarDropdown").dropdown('toggle')
+</script>
+
+        </body>
+</html>
